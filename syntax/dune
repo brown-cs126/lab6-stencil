@@ -1,0 +1,13 @@
+(ocamllex
+ (modules lex))
+
+(menhir
+ (modules parse))
+
+(library
+ (name syntax))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -39))))
